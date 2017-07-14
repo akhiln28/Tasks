@@ -18,7 +18,7 @@ public class PendingTasksActivity extends AppCompatActivity {
 
         String names[] = {"akhil","nikhil","andi","thsi","thisa","that","notthat","andalso","naot","kafdl","akfdl" +
                 "jaflsdj","kafdslj","kfdlsajf","dfklajf"};
-        ListAdapter akhilAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, names);
+        ListAdapter akhilAdapter = new CustomAdapter(this,names);
         ListView akhilListView = (ListView) findViewById(R.id.listview_pending_tasks);
         akhilListView.setAdapter(akhilAdapter);
         akhilListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
