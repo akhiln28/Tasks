@@ -5,11 +5,10 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 /**
- * Created by akhil on 15-07-2017.
+ * Created by akhil on 17-07-2017.
  */
 
 public class TasksDbHelper extends SQLiteOpenHelper {
-
     private static final String DATABASE_NAME = "tasks";
     private static int DATABASE_VERSION = 1;
     public TasksDbHelper(Context context) {

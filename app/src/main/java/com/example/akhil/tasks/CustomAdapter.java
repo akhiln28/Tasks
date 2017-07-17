@@ -18,6 +18,7 @@ import static android.R.attr.resource;
  */
 
 class CustomAdapter extends ArrayAdapter<String>{
+
     public CustomAdapter(@NonNull Context context,String[] names) {
         super(context,R.layout.custom_row, names);
     }
@@ -25,7 +26,6 @@ class CustomAdapter extends ArrayAdapter<String>{
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        //this is how you use LayoutInflater to set customView from custom_row.
         LayoutInflater akhilInfalter = LayoutInflater.from(getContext());
         View customView = akhilInfalter.inflate(R.layout.custom_row,parent,false);
 
